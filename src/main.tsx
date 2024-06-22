@@ -5,8 +5,7 @@ import ReactDOM from "react-dom/client";
 import "@fontsource/pt-sans/400.css";
 import "@fontsource/pt-sans/700.css";
 
-import { ThemeProvider } from "styled-components";
-import theme, { GlobalStyle } from "./styling/theme";
+import "@/globals.css";
 
 // routing
 import { RouterProvider, createRouter } from "@tanstack/react-router";
@@ -26,11 +25,7 @@ if (rootElement && !rootElement.innerHTML) {
 	const root = ReactDOM.createRoot(rootElement);
 	root.render(
 		<StrictMode>
-			<ThemeProvider theme={theme}>
-				<GlobalStyle />
-
-				<RouterProvider router={router} />
-			</ThemeProvider>
+			<RouterProvider router={router} />
 		</StrictMode>,
 	);
 }

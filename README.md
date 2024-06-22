@@ -13,9 +13,11 @@ This is my opinionated template for bootstrapping React-based web apps. It follo
 - [Vite](https://vitejs.dev) for building and as a super fast development server,
 - [SWC](https://swc.rs/) for bundling,
 - [Biome](https://biomejs.dev/) for fast, no-bullshit linting and formatting,
+
 - [TanStack Router](https://tanstack.com/router/) for routing and fetching,
 - [Jotai](https://jotai.org/) for sane state management,
-- [styled-components](https://styled-components.com/) for dead simple styling.
+- [Tailwind](https://tailwindcss.com/) for mildly simple inline styling.
+- [shadcn/ui](https://ui.shadcn.com/docs/theming) for simple prebuilt components.
 
 ## Scripts
 
@@ -36,7 +38,5 @@ src/
         index.lazy.tsx
     stores/
         counter.ts
-    styling/
-        theme.ts
     vite-env.d.ts
 ```
